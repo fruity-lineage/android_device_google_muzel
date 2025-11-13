@@ -9,6 +9,10 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_BOOTLOADER_BOARD_NAME := $(DEVICE_CODENAME)
 TARGET_SCREEN_DENSITY := 420
 
+# Allocator hardening
+TARGET_USE_HARDENED_MALLOC := true
+TARGET_HAS_ARM_MTE := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE += \
     arm_smmu_v3_kvm.atomic_pages=5897
