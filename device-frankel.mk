@@ -19,7 +19,7 @@ endif
 include device/google/laguna/common.mk
 
 # Use RKP-backed KeyMint import attestation through Keystore2.
-PRODUCT_SYSTEM_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.lineage.duckrkp.trusty_import=true \
     remote_provisioning.hostname?=remoteprovisioning.googleapis.com
 
